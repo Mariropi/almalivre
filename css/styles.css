@@ -34,8 +34,8 @@ background-attachment:fixed;
 
 color:var(--cor-texto);
 
-font-size:22px;
-line-height:1.8;
+font-size:24px;
+line-height:1.9;
 
 }
 
@@ -111,7 +111,7 @@ margin-bottom:10px;
 
 font-family:"Patrick Hand";
 
-font-size:38px;
+font-size:44px;
 
 max-width:900px;
 
@@ -206,7 +206,7 @@ text-align:center;
 
 .intro p{
 
-font-size:22px;
+font-size:26px;
 
 margin-bottom:25px;
 
@@ -214,7 +214,7 @@ margin-bottom:25px;
 
 .intro li{
 
-font-size:21px;
+font-size:26px;
 
 margin-bottom:10px;
 
@@ -294,7 +294,7 @@ object-fit:cover;
 
 figcaption{
 
-font-size:14px;
+font-size:16px;
 
 margin-top:5px;
 
@@ -344,7 +344,7 @@ padding:40px 20px;
 
 text-align:center;
 
-font-size:22px;
+font-size:26px;
 
 }
 
@@ -419,7 +419,7 @@ text-align:center;
 
 padding:70px;
 
-font-size:22px;
+font-size:24px;
 
 }
 
@@ -447,7 +447,7 @@ font-size:30px;
 
 #footer .copyright{
 
-font-size:11px;
+font-size:12px;
 
 color:#777;
 
@@ -566,8 +566,8 @@ padding-right:16px;
 .historia p,
 .texto-autora,
 .eventos p{
-font-size:19px;
-line-height:1.7;
+font-size:26px;
+line-height:1.9;
 }
 
 .intro li{
