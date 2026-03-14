@@ -3,10 +3,8 @@
 --cor-texto:#333;
 }
 
-
 @import url("https://db.onlinewebfonts.com/c/8045e81b6278984055ef0ac5561b93b3?family=More+Sugar+Thin");
 @import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
-
 
 @font-face{
 font-family:"More Sugar Thin";
@@ -14,6 +12,7 @@ src:url("https://db.onlinewebfonts.com/t/8045e81b6278984055ef0ac5561b93b3.woff2"
 url("https://db.onlinewebfonts.com/t/8045e81b6278984055ef0ac5561b93b3.woff") format("woff"),
 url("https://db.onlinewebfonts.com/t/8045e81b6278984055ef0ac5561b93b3.ttf") format("truetype");
 }
+
 
 html{
 scroll-behavior:smooth;
@@ -26,7 +25,7 @@ margin:0;
 font-family:"Patrick Hand", cursive;
 
 background:
-linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),
+linear-gradient(rgba(255,255,255,0.88),rgba(255,255,255,0.88)),
 url("../img/capalivro.jpg");
 
 background-size:cover;
@@ -34,6 +33,9 @@ background-position:center;
 background-attachment:fixed;
 
 color:var(--cor-texto);
+
+font-size:22px;
+line-height:1.8;
 
 }
 
@@ -46,11 +48,12 @@ width:100%;
 
 display:flex;
 justify-content:center;
+align-items:center;
 gap:40px;
 
 padding:15px;
 
-background:rgba(255,255,255,0.9);
+background:rgba(255,255,255,0.95);
 
 z-index:1000;
 
@@ -66,7 +69,7 @@ text-decoration:none;
 
 font-weight:bold;
 
-font-size:20px;
+font-size:22px;
 
 }
 
@@ -85,7 +88,7 @@ flex-direction:column;
 
 align-items:center;
 
-padding-top:120px;
+padding-top:140px;
 
 text-align:center;
 
@@ -95,7 +98,7 @@ text-align:center;
 
 font-family:"More Sugar Thin";
 
-font-size:90px;
+font-size:95px;
 
 color:var(--cor-titulo);
 
@@ -103,24 +106,26 @@ margin-bottom:10px;
 
 }
 
+
 .frase{
 
 font-family:"Patrick Hand";
 
-font-size:30px;
+font-size:38px;
 
-max-width:750px;
+max-width:900px;
 
 margin:20px auto 40px auto;
 
-line-height:1.4;
+line-height:1.5;
 
 color:#131212;
 
 }
 
-
-.btn{
+.btn,
+.btn-footer,
+.botao-flutuante{
 
 font-family:"More Sugar Thin";
 
@@ -189,7 +194,7 @@ transform:rotate(-12deg);
 
 .intro{
 
-max-width:850px;
+max-width:900px;
 
 margin:40px auto;
 
@@ -197,38 +202,32 @@ padding:40px 20px;
 
 text-align:center;
 
-line-height:1.7;
-
 }
 
 .intro p{
 
-font-size:18px;
+font-size:22px;
 
-margin-bottom:20px;
-
-}
-
-.intro ul{
-
-list-style:none;
-
-padding:0;
+margin-bottom:25px;
 
 }
 
 .intro li{
+
+font-size:21px;
 
 margin-bottom:10px;
 
 }
 
 
-h1,h2{
+h2{
 
-font-family:"More Sugar Thin";
+font-family:"Patrick Hand";
 
 color:var(--cor-titulo);
+
+font-size:42px;
 
 }
 
@@ -284,9 +283,18 @@ object-fit:cover;
 
 }
 
+.galeria img{
+
+width:100%;
+height:220px;
+
+object-fit:cover;
+
+}
+
 figcaption{
 
-font-size:12px;
+font-size:14px;
 
 margin-top:5px;
 
@@ -302,33 +310,20 @@ z-index:10;
 
 }
 
-/* TRECHO LIVRO */
-
-.trecho-livro{
-
-text-align:center;
-
-margin-top:20px;
-
-margin-bottom:40px;
-
-}
-
 .print-bagagem{
 
 width:520px;
 max-width:95%;
 
 display:block;
+
 margin:35px auto;
 
 border-radius:10px;
 
 box-shadow:0 18px 30px rgba(0,0,0,0.25);
 
-transition:transform 0.35s ease, box-shadow 0.35s ease;
-
-cursor:pointer;
+transition:0.3s;
 
 }
 
@@ -336,13 +331,12 @@ cursor:pointer;
 
 transform:scale(1.08);
 
-box-shadow:0 28px 45px rgba(0,0,0,0.35);
-
 }
+
 
 .historia{
 
-max-width:800px;
+max-width:900px;
 
 margin:40px auto;
 
@@ -350,9 +344,7 @@ padding:40px 20px;
 
 text-align:center;
 
-line-height:1.7;
-
-font-size:18px;
+font-size:22px;
 
 }
 
@@ -368,7 +360,7 @@ text-align:center;
 
 font-family:"More Sugar Thin";
 
-font-size:48px;
+font-size:52px;
 
 color:#AA1F19;
 
@@ -387,8 +379,6 @@ align-items:center;
 gap:40px;
 
 flex-wrap:wrap;
-
-margin-top:20px;
 
 }
 
@@ -413,9 +403,7 @@ box-shadow:0 18px 30px rgba(0,0,0,0.25);
 
 border-radius:10px;
 
-transition:transform 0.35s ease, box-shadow 0.35s ease;
-
-cursor:pointer;
+transition:0.35s;
 
 }
 
@@ -423,26 +411,7 @@ cursor:pointer;
 
 transform:scale(1.15) rotate(0deg);
 
-box-shadow:0 30px 50px rgba(0,0,0,0.35);
-
-z-index:5;
-
 }
-
-.texto-autora{
-
-max-width:720px;
-
-margin:50px auto;
-
-font-size:18px;
-
-line-height:1.7;
-
-text-align:center;
-
-}
-
 
 .eventos{
 
@@ -450,7 +419,11 @@ text-align:center;
 
 padding:70px;
 
+font-size:22px;
+
 }
+
+
 
 #footer{
 
@@ -462,69 +435,27 @@ max-width:800px;
 
 margin:auto;
 
-color:#161515;
-
 }
 
 #footer p{
 
-font-family:"More Sugar Thin";
+font-family:"Patrick Hand";
 
 font-size:30px;
 
-max-width:750px;
-
-margin:20px auto 40px auto;
-
-line-height:1.4;
-
 }
 
-.btn-footer{
+#footer .copyright{
 
-font-family:"More Sugar Thin";
+font-size:11px;
 
-background:#AA1F19;
+color:#777;
 
-color:white;
+margin-top:20px;
 
-padding:18px 40px;
+font-family:'Patrick Hand', cursive;
 
-border-radius:40px;
-
-text-decoration:none;
-
-font-size:20px;
-
-display:inline-block;
-
-margin-top:10px;
-
-}
-
-.botao-flutuante{
-
-position:fixed;
-
-bottom:30px;
-
-right:30px;
-
-background:var(--cor-titulo);
-
-color:white;
-
-padding:22px 40px;
-
-border-radius:40px;
-
-text-decoration:none;
-
-font-size:20px;
-
-box-shadow:0 10px 25px rgba(0,0,0,0.45);
-
-z-index:1000;
+text-align:center;
 
 }
 
@@ -546,56 +477,53 @@ transform:translateY(0);
 
 }
 
-#footer .copyright{
-
-font-size:10px;
-
-color:#777;
-
-margin-top:20px;
-
-font-family:'Patrick Hand', cursive;
-
-text-align:center;
-
-}
-@media (max-width:600px){
-
-.hero h1{
-font-size:50px;
-}
-
-.frase{
-font-size:22px;
-padding:0 20px;
-}
+@media (max-width:768px){
 
 .menu{
-gap:15px;
-font-size:14px;
+flex-direction:column;
+gap:10px;
+padding:10px;
 }
 
 .menu a{
-font-size:16px;
+font-size:18px;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.frase{
+font-size:26px;
+padding:0 20px;
 }
 
 .print1{
-width:140px;
-top:90px;
-left:5%;
+position:relative;
+top:auto;
+left:auto;
+width:150px;
+margin:20px auto;
+transform:none;
 }
 
 .galeria{
-position:relative;
-min-height:900px;
+position:static;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+min-height:auto;
 }
 
 .galeria figure{
+position:static;
+transform:none;
 width:140px;
 }
 
 .print-bagagem{
-width:90%;
+width:95%;
 }
 
 .autora-layout{
@@ -604,69 +532,12 @@ gap:30px;
 }
 
 .foto-autora{
-width:220px;
+width:240px;
 }
 
 .cartao-autora{
 width:95%;
 transform:none;
-}
-
-.btn{
-font-size:18px;
-padding:15px 30px;
-}
-
-}
-
-@media (min-width:601px) and (max-width:1024px){
-
-.hero h1{
-font-size:70px;
-}
-
-.frase{
-font-size:26px;
-}
-
-.menu a{
-font-size:18px;
-}
-
-.galeria figure{
-width:160px;
-}
-
-.print-bagagem{
-width:420px;
-}
-
-.foto-autora{
-width:260px;
-}
-
-.cartao-autora{
-width:480px;
-}
-
-}
-
-@media (min-width:1400px){
-
-.hero h1{
-font-size:100px;
-}
-
-.frase{
-font-size:34px;
-}
-
-.print-bagagem{
-width:520px;
-}
-
-.cartao-autora{
-width:560px;
 }
 
 }
