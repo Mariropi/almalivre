@@ -33,3 +33,18 @@ el.classList.add("aparecer");
 });
 
 });
+document.addEventListener("DOMContentLoaded", function(){
+const banner = document.getElementById("cookie-banner");
+const botao = document.getElementById("aceitar-cookies");
+
+if(localStorage.getItem("cookiesAceitos") === "sim"){
+if(banner) banner.style.display = "none";
+}
+
+if(botao){
+botao.addEventListener("click", function(){
+localStorage.setItem("cookiesAceitos", "sim");
+banner.style.display = "none";
+});
+}
+});
